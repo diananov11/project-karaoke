@@ -1,0 +1,123 @@
+body {
+  background: linear-gradient(
+    57.4deg,
+    rgb(249, 206, 183) 4.6%,
+    rgb(234, 174, 202) 26%,
+    rgb(210, 182, 226) 49.1%,
+    rgb(173, 209, 242) 86.5%
+  );
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.button {
+  display: block;
+  margin: 20px auto;
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+}
+
+.theme {
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  transition: all 150ms ease-in-out;
+}
+
+.theme:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border: 2px solid turquoise;
+}
+
+.intro-karaoke-img {
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.white-text {
+  color: whitesmoke;
+}
+
+.intro-karaoke-img:hover {
+  filter: contrast(80%);
+  transform: scale(1.1);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin: 15px 0;
+}
+
+.grid-img {
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.grid-img:hover {
+  transform: scale(2);
+}
+
+.karaoke {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.karaoke:hover {
+  transition: all 150ms ease-in-out;
+  background: linear-gradient(
+    106.7deg,
+    rgb(151, 150, 240) 12.1%,
+    rgb(255, 206, 236) 63.2%
+  );
+  cursor: pointer;
+}
+
+.description {
+  text-align: justify;
+}
+
+.container {
+  max-width: 610px;
+  background-color: white;
+  margin: 40px auto;
+  border-radius: 10px;
+  padding: 20px 64px;
+}
+
+.new-theme {
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+}
+
+.new-theme div {
+  background-color: #3a4750;
+  color: white;
+}
+
+footer {
+  text-align: center;
+}
