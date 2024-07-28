@@ -3,6 +3,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Karaoke - My Hobby 🎤🎵</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         background: radial-gradient(
@@ -13,6 +19,8 @@
           rgb(234, 251, 251) 77.6%,
           rgb(240, 251, 244) 100.7%
         );
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
       }
 
       img {
@@ -28,6 +36,39 @@
       .button {
         display: block;
         margin: 20px auto;
+        font-family: "Roboto Slab", serif;
+        font-optical-sizing: auto;
+      }
+
+      .theme {
+        padding: 10px;
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+      }
+
+      .theme:hover {
+        transition: all 150ms ease-in-out;
+        background: white;
+        color: black;
+        cursor: pointer;
+        border: none;
+        border: 2px solid turquoise;
+      }
+
+      .karaoke {
+        background: white;
+        border-radius: 10px;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .karaoke:hover {
+        transition: all 150ms ease-in-out;
+        background: turquoise;
+
+        cursor: pointer;
       }
 
       .description {
@@ -39,7 +80,7 @@
         background-color: white;
         margin: 40px auto;
         border-radius: 10px;
-        padding: 15px;
+        padding: 20px;
       }
 
       footer {
@@ -48,9 +89,9 @@
     </style>
   </head>
   <body>
-    <button class="button">Dark Theme</button>
+    <button class="button theme">Dark Theme</button>
     <div class="container">
-      <h1>What is Karaoke? 🎙</h1>
+      <h1>What is Karaoke? 🎤</h1>
       <h2>My favorite activity</h2>
       <img
         src="https://static.cms.yp.ca/ecms/media/1/6510326_xxl-1449157082-600x360.jpg"
@@ -87,7 +128,7 @@
       <p>
         📖 Read on <a href="https://en.wikipedia.org/wiki/Karaoke">Wikipedia</a>
       </p>
-      <button class="button">Let's Karaoke 🎤</button>
+      <button class="button karaoke">Let's Karaoke 🎵</button>
     </div>
   </body>
   <footer>
