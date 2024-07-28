@@ -26,6 +26,8 @@
       img {
         display: block;
         margin: 10px auto;
+        max-width: 100%;
+        border-radius: 10px;
       }
 
       h1,
@@ -45,15 +47,41 @@
         color: white;
         background-color: black;
         border-radius: 20px;
+        transition: all 150ms ease-in-out;
       }
 
       .theme:hover {
-        transition: all 150ms ease-in-out;
         background: white;
         color: black;
         cursor: pointer;
         border: none;
         border: 2px solid turquoise;
+      }
+
+      .intro-karaoke-img {
+        transition: all 150ms ease-in-out;
+        cursor: pointer;
+      }
+
+      .intro-karaoke-img:hover {
+        filter: contrast(80%);
+        transform: scale(1.1);
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        margin: 15px 0;
+      }
+
+      .grid-img {
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+      }
+
+      .grid-img:hover {
+        transform: scale(2);
       }
 
       .karaoke {
@@ -67,7 +95,6 @@
       .karaoke:hover {
         transition: all 150ms ease-in-out;
         background: turquoise;
-
         cursor: pointer;
       }
 
@@ -76,11 +103,11 @@
       }
 
       .container {
-        max-width: 680px;
+        max-width: 610px;
         background-color: white;
         margin: 40px auto;
         border-radius: 10px;
-        padding: 20px;
+        padding: 20px 64px;
       }
 
       footer {
@@ -96,27 +123,35 @@
       <img
         src="https://static.cms.yp.ca/ecms/media/1/6510326_xxl-1449157082-600x360.jpg"
         alt=""
+        class="intro-karaoke-img"
       />
-      <img
-        src="https://static.cms.yp.ca/ecms/media/1/19773289_lel-1449841551-600x360.jpg"
-        alt=""
-      />
-      <img
-        src="https://static.cms.yp.ca/ecms/media/1/8508320_lel-1449768495-600x360.jpg"
-        alt=""
-      />
-      <img
-        src="https://static.cms.yp.ca/ecms/media/1/karaoke2-1446926502-600x360.jpg"
-        alt=""
-      />
-      <img
-        src="https://static.cms.yp.ca/ecms/media/1/17384525_xl-1449435256-600x360.jpg"
-        alt=""
-      />
-      <img
-        src="https://static.cms.yp.ca/ecms/media/1/karaoke-1446222638-600x360.jpg"
-        alt=""
-      />
+      <div class="grid">
+        <img
+          src="https://static.cms.yp.ca/ecms/media/1/19773289_lel-1449841551-600x360.jpg"
+          alt=""
+          class="grid-img"
+        />
+        <img
+          src="https://static.cms.yp.ca/ecms/media/1/8508320_lel-1449768495-600x360.jpg"
+          alt=""
+          class="grid-img"
+        />
+        <img
+          src="https://static.cms.yp.ca/ecms/media/1/karaoke2-1446926502-600x360.jpg"
+          alt=""
+          class="grid-img"
+        />
+        <img
+          src="https://static.cms.yp.ca/ecms/media/1/17384525_xl-1449435256-600x360.jpg"
+          alt=""
+          class="grid-img"
+        />
+        <img
+          src="https://static.cms.yp.ca/ecms/media/1/karaoke-1446222638-600x360.jpg"
+          alt=""
+          class="grid-img"
+        />
+      </div>
       <p class="description">
         Karaoke s a type of interactive entertainment system usually offered in
         clubs and bars, where people sing along to pre-recorded accompaniment
