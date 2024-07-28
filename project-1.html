@@ -11,13 +11,12 @@
     />
     <style>
       body {
-        background: radial-gradient(
-          328px at 2.9% 15%,
-          rgb(191, 224, 251) 0%,
-          rgb(232, 233, 251) 25.8%,
-          rgb(252, 239, 250) 50.8%,
-          rgb(234, 251, 251) 77.6%,
-          rgb(240, 251, 244) 100.7%
+        background: linear-gradient(
+          57.4deg,
+          rgb(249, 206, 183) 4.6%,
+          rgb(234, 174, 202) 26%,
+          rgb(210, 182, 226) 49.1%,
+          rgb(173, 209, 242) 86.5%
         );
         font-family: "Roboto Slab", serif;
         font-optical-sizing: auto;
@@ -63,6 +62,10 @@
         cursor: pointer;
       }
 
+      .white-text {
+        color: whitesmoke;
+      }
+
       .intro-karaoke-img:hover {
         filter: contrast(80%);
         transform: scale(1.1);
@@ -94,7 +97,11 @@
 
       .karaoke:hover {
         transition: all 150ms ease-in-out;
-        background: turquoise;
+        background: linear-gradient(
+          106.7deg,
+          rgb(151, 150, 240) 12.1%,
+          rgb(255, 206, 236) 63.2%
+        );
         cursor: pointer;
       }
 
@@ -110,13 +117,26 @@
         padding: 20px 64px;
       }
 
+      .new-theme {
+        background: linear-gradient(
+          180.3deg,
+          rgb(221, 221, 221) 5.5%,
+          rgb(110, 136, 161) 90.2%
+        );
+      }
+
+      .new-theme div {
+        background-color: #3a4750;
+        color: white;
+      }
+
       footer {
         text-align: center;
       }
     </style>
   </head>
   <body>
-    <button class="button theme">Dark Theme</button>
+    <button class="button theme">Change Theme</button>
     <div class="container">
       <h1>What is Karaoke? 🎤</h1>
       <h2>My favorite activity</h2>
@@ -161,15 +181,39 @@
         colour, or music video images, to guide the singer.
       </p>
       <p>
-        📖 Read on <a href="https://en.wikipedia.org/wiki/Karaoke">Wikipedia</a>
+        📖 Read on
+        <a href="https://en.wikipedia.org/wiki/Karaoke" target="_blank"
+          >Wikipedia</a
+        >
       </p>
       <button class="button karaoke">Let's Karaoke 🎵</button>
     </div>
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+        let a = document.querySelector("a");
+        body.classList.toggle("new-theme");
+        a.classList.toggle("white-text");
+      }
+      let theme = document.querySelector(".theme");
+      theme.addEventListener("click", changeTheme);
+
+      function register() {
+        let name = prompt("What's your name?").toLowerCase().trim();
+        alert(
+          `Hi ${name}✨, Thank you so much for your registration! We will contact you soon🔥`
+        );
+      }
+      let karaoke = document.querySelector(".karaoke");
+      karaoke.addEventListener("click", register);
+    </script>
   </body>
   <footer>
     <p>
       Coded with 🥰 by
-      <a href="https://www.linkedin.com/in/diana-novita11/">Diana Novita</a>
+      <a href="https://www.linkedin.com/in/diana-novita11/" target="_blank"
+        >Diana Novita</a
+      >
     </p>
   </footer>
 </html>
